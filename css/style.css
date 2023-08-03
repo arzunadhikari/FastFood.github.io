@@ -1,0 +1,540 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+} 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+:root{
+  --primary: rgb(6, 149, 61);
+    --secondary: #464646;
+    --tertiary: #72605b;
+}
+body {
+    background-color: #f9f6f6;
+}
+/* body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+} */
+/* navbar section  */
+.navbar{
+    background-color: transparent !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.bg-light{
+     --bs-bg-opacity:1;
+}
+.p-3{
+    padding: 2rem !important;
+}
+.fixed-top{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    left: 0;
+}
+/* navbar container section  */
+.navbar>.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+/* navbar light section  */
+.navbar-light .navbar-hero{
+    color: rgba(0,0,0,.9);
+}
+/* to use flex grow  */
+/* .navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+} */
+.collapse:not(.show){
+    display: none;
+}
+/* navbar hero  */
+.navbar-hero{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    margin-right:1rem;
+    white-space: nowrap;
+
+}
+.navbar-hero{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+/* text-primary  */
+.primary-text{
+    color: var(--primary) !important;
+
+}
+/* navbar light and navbar  toggler */
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+}
+/* .navbar.nav  */
+.navbar-nav{
+    display: flex;
+    list-style: none;
+
+}
+/* navbar links */
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(0,0,0,.55);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.nav-link{
+    display: block;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+
+
+}
+.mb-lg-0{
+   margin-bottom: 0 !important;
+}
+.ms-auto{
+   margin-left: auto !important;
+}
+/* header  */
+.container, .container-fluid  {
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--bs-gutter-x,.85);
+    padding-left: var(--bs-gutter-x,.85);
+}
+/* row/  */
+.row{
+    --bs-gutter-x: 1.8rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.row >* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: var(--bs-gutter-y);
+}
+/* kalu texts  */
+.kalu-texts{
+    max-width: 80rem;
+}
+.kalu-texts h1{
+    font-size: 3rem;
+    color: var(--secondary);
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.kalu-texts p{
+    font-size:2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--tertiary);
+    margin: 1.5rem 0rem;
+}
+
+.py-5{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+/* button editing */
+.btn-primary:hover{
+    background-color:rgb(5, 144, 77) !important ;
+}
+.btn-primary{
+    color: #fff;
+    background-color: var(--primary);
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+.btn-hover:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+}
+.btn{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 1.5;
+    padding: 1rem 3rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.rounded-pill{
+   border-radius: 50rem !important;
+}
+
+/* lines */
+hr:not([size]){
+    height: 1px;
+}
+hr{
+    margin: 3rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+}
+/* hr second  */
+.my5{
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+
+}
+/* img scetion for header  */
+.rounded-circle{
+    border-radius: 50% !important;
+}
+
+.m-auto{
+     margin:auto !important; 
+}
+
+.d-block{
+    display: block !important;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.img{
+    vertical-align: middle;
+}
+
+/* about div  */
+/* for h2 heading  */
+.h2,h2{
+        font-size: calc(2.5rem + .9vw);
+}
+.text-center{
+    text-align: center !important;
+}
+.text-heading{
+   font-weight:bold ;
+}
+.mb-5{
+margin-bottom: 3rem !important;
+}
+/* about images  */
+.about-img{
+    border-radius: 2rem  !important;
+}
+/* about text  */
+p{
+    font-size: 1.95rem;
+    margin-top: 0;
+    color: #72605b;
+    margin-bottom: 2rem;
+}
+
+/* services section  */
+
+/* services row  */
+.circle-services{
+    background-color: var(--primary);
+    width: 10rem;
+     height:10rem ;
+     border-radius: 50%;
+}
+ /* icon designing  */
+ .icon-services{
+    color: #fff;
+    font-size: 3rem !important;
+    padding: 3rem 0rem;
+ }
+
+ /* font h5  */
+ .services-circle h5{
+    font-weight: bold;
+    margin: 1rem 0;
+ }
+ .h5,h5{
+    font-size: 2rem;
+ }
+ /* margin top for row  */
+ .mt-5{
+    margin-top: 4rem !important;
+ }
+
+ /* menus section  */
+ .card:hover{
+transform: translateY(-.5rem);
+transition: 0.7s;
+ }
+ .card {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/* card img left and right border design  */
+.card-img, .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+img, svg {
+    vertical-align: middle;
+}
+/* card body for menus  */
+.card-body{
+padding: 2rem 2rem;
+}
+.card-title{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+/* form section */
+.form-control{
+    display: block;
+    width: 100%;
+    color: #675151 !important;
+    background-color: #cecfd0 !important;
+    border-radius: 0rem !important;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    appearance: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid #ced4da;
+}
+.mt-2{
+margin-top: 1rem !important;
+}
+/* submit btn */
+.my-1{
+margin-top: 1.5rem !important;
+margin-bottom: 1.5rem !important;
+}
+/* footer section  */
+.footer {
+    padding: 2rem 3rem;
+    background-color: #000;
+    line-height: 0;
+}
+.footer h5{
+ color: #fff;
+ line-height: 2;
+ font-weight: bold;
+}
+/* media query */
+@media (max-width: 478px){
+.card-container {
+    margin: 20px 0px !important;
+}
+
+
+.kalu-texts {
+    justify-content: center;
+    align-items: center;
+}
+.kalu-texts p {
+    text-align: center;
+    font-size: 1.29rem;
+}
+.kalu-texts h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.kalu-img img {
+    width: 30rem  !important;
+    height: 30rem !important;
+}
+.lines
+{
+    display: inherit;
+}
+
+    .about-text{
+        margin: 3rem 1rem !important;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        position: relative;
+        left: 1rem; 
+        right: 1rem;
+    }
+}
+    
+ 
+@media (min-width: 478px) and (max-width: 575px){
+    .kalu-texts p {
+        text-align: center;
+        font-size: 1.59rem;
+    }
+    .kalu-texts h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .kalu-texts {
+        justify-content: center;
+        align-items: center;
+    }
+.card-container {
+    margin: 2rem 0 !important;
+}
+.about-img-container {
+    margin: 2rem 0;
+}
+.kalu-img img {
+    width: 40rem !important;
+    height: 40rem !important;
+}
+.lines
+{
+    display: inherit;
+}
+.about-text{
+    margin: 3rem 1rem !important;
+}
+}
+@media (min-width: 576px){
+.container, .container-sm {
+    max-width: 54rem;
+}
+.col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+}
+@media (max-width:768px) {
+    .navbar>.container-fluid{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 768px){
+    .card-container {
+        margin: 2rem 0!important;
+    }
+    .about-img-container {
+        margin: 2rem 0;
+    }
+    .kalu-img img {
+        width: 40rem !important;
+        height: 40rem !important;
+    }
+    .about-text{
+        margin: 3rem 1rem !important;
+    }
+}
+
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+.container, .container-md, .container-sm {
+    max-width: 72rem;
+}
+.fw-no{
+    flex-wrap: nowrap;
+}
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.kalu-texts h1 {
+    font-size: 4rem;
+    color: var(--secondary);
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.about-img-container {
+    margin: 20px 0px;
+}
+.kalu-img img {
+    width: 30rem  !important;
+    height: 30rem !important;
+}
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66%;
+}
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.container, .container-md, .container-sm {
+    max-width: 96rem;
+}
+
+}
+@media (min-width: 1200px){
+/* .h2,h2 {
+    font-size: 3.2rem;
+} */
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 114rem;
+}
+}
+
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 132rem;
+}
+}
+
+
+
+
+
+
+
+
